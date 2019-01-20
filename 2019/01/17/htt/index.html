@@ -86,17 +86,17 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="http入门http 请求http请求： HTTP/1.1协议中共定义了八种方法（有时也叫“动作”）来表明Request-URI指定的资源的不同操作方式 OPTIONS - 返回服务器针对特定资源所支持的HTTP请求方法。也可以利用向Web服务器发送’*’的请求来测试服务器的功能性。HEAD- 向服务器索要与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/GET.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/POST1.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/POST2.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/curl.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/resp1.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/resp2.jpg">
-<meta property="og:updated_time" content="2019-01-16T20:58:24.000Z">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/GET.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/POST1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/POST2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/curl.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/resp1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/resp2.jpg">
+<meta property="og:updated_time" content="2019-01-20T13:20:36.590Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="http入门">
 <meta name="twitter:description" content="http入门http 请求http请求： HTTP/1.1协议中共定义了八种方法（有时也叫“动作”）来表明Request-URI指定的资源的不同操作方式 OPTIONS - 返回服务器针对特定资源所支持的HTTP请求方法。也可以利用向Web服务器发送’*’的请求来测试服务器的功能性。HEAD- 向服务器索要与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况">
-<meta name="twitter:image" content="http://yoursite.com/2019/01/17/htt/htt/GET.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/17/htt/GET.jpg">
 
 
 
@@ -331,11 +331,11 @@
 <p>OPTIONS - 返回服务器针对特定资源所支持的HTTP请求方法。也可以利用向Web服务器发送’*’的请求来测试服务器的功能性。<br>HEAD- 向服务器索要与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况下，就可以获取包含在响应消息头中的元信息。该方法常用于测试超链接的有效性，是否可以访问，以及最近是否更新。<br>GET - 向特定的资源发出请求。注意：GET方法不应当被用于产生“副作用”的操作中，例如在web app.中。其中一个原因是GET可能会被网络蜘蛛等随意访问。<br>POST - 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。<br>PUT - 向指定资源位置上传其最新内容。<br>DELETE - 请求服务器删除Request-URI所标识的资源。<br>TRACE- 回显服务器收到的请求，主要用于测试或诊断。<br>CONNECT - HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。<br>PATCH - 用来将局部修改应用于某一资源</p>
 <p>这里主要以为GET和POST说明请求包括哪些内容，以及用chrome调试工具如何查看http请求内容</p>
 <p>以访问百度为例，打开chrome，F12切换到开发者模式，在network下查看，如图</p>
-<p><img src="htt/GET.jpg" alt=""></p>
+<p><img src="/2019/01/17/htt/GET.jpg" alt=""></p>
 <p>可以看到请求内容包括请求动作，路径，协议版本，内容等</p>
 <p>若为post请求，则多出请求的数据部分</p>
-<p><img src="htt/POST1.jpg" alt=""></p>
-<p><img src="htt/POST2.jpg" alt=""></p>
+<p><img src="/2019/01/17/htt/POST1.jpg" alt=""></p>
+<p><img src="/2019/01/17/htt/POST2.jpg" alt=""></p>
 <p>可以看出多出了表单部分</p>
 <p>综上，http的请求格式为：</p>
 <p>请求的格式<br>1 动词 路径 协议/版本<br>2 Key1: value1<br>2 Key2: value2<br>2 Key3: value3<br>2 Content-Type: application/x-www-form-urlencoded<br>2 Host: <a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a><br>2 User-Agent: curl/7.54.0<br>3<br>4 要上传的数据</p>
@@ -343,13 +343,13 @@
 <p>若在git bash中使用curl发起http请求为</p>
 <pre><code class="bash">$ curl -s -v -H <span class="string">"Frank: xxx"</span> -- <span class="string">"https://www.baidu.com"</span>
 </code></pre>
-<p><img src="htt/curl.jpg" alt=""></p>
+<p><img src="/2019/01/17/htt/curl.jpg" alt=""></p>
 <h3 id="http-响应"><a href="#http-响应" class="headerlink" title="http 响应"></a>http 响应</h3><p>以get响应为例说明响应内容，可以看到访问百度后响应分为四个部分<br>1 协议/版本号 状态码 状态解释<br>2 Key1: value1<br>2 Key2: value2<br>2 Content-Length: 17931<br>2 Content-Type: text/html<br>3<br>4 要下载的内容</p>
 <p>状态码描述：<br>1<strong>    信息，服务器收到请求，需要请求者继续执行操作<br>2</strong>    成功，操作被成功接收并处理<br>3<strong>    重定向，需要进一步的操作以完成请求<br>4</strong>    客户端错误，请求包含语法错误或无法完成请求<br>5**    服务器错误，服务器在处理请求的过程中发生了错误</p>
 <p>查看Response Headers，点击“view source”，可看到响应的前两部分</p>
-<p><img src="htt/resp1.jpg" alt=""></p>
+<p><img src="/2019/01/17/htt/resp1.jpg" alt=""></p>
 <p>查看response可以看到相应的第四部分</p>
-<p><img src="htt/resp2.jpg" alt=""></p>
+<p><img src="/2019/01/17/htt/resp2.jpg" alt=""></p>
 
       
     </div>
@@ -459,7 +459,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

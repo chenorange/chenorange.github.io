@@ -79,19 +79,21 @@
 
 
 
-<meta name="description" content="命令行使用举例:ls:列出文件下所有的文件，包括以“.“开头的隐藏文件（linux下文件隐藏文件是以.开头的，如果存在..代表存在着父目录） $ ls -a   列出文件的详细信息，如创建者，创建时间，文件的读写权限列表等等 $ ls -l   显示当前目录下的所有文件及文件夹包括隐藏的.和..等并显示详细信息，详细信息包括大小，属组，创建时间 $ ls -al   catcat命令主要有三大功能">
+<meta name="description" content="基本git命令:git init用于创建新仓库，步骤为：创建新目录，进入目录，然后执行 git init以创建新的 git 仓库。生成 .git 目录，该目录就是本地仓库 $ git init   git addgit 仓库管理分为三大块，工作区，缓存区 ，版本库当在工作目录进行文件的新增，修改后需要提交仓库的过程中，必须将文件或者目录 git add 到 缓存区，git仓库会保存临时改动，否则直">
 <meta property="og:type" content="article">
-<meta property="og:title" content="命令行入门">
-<meta property="og:url" content="http://yoursite.com/2019/01/17/commanduse/index.html">
+<meta property="og:title" content="git入门">
+<meta property="og:url" content="http://yoursite.com/2019/01/14/git/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="命令行使用举例:ls:列出文件下所有的文件，包括以“.“开头的隐藏文件（linux下文件隐藏文件是以.开头的，如果存在..代表存在着父目录） $ ls -a   列出文件的详细信息，如创建者，创建时间，文件的读写权限列表等等 $ ls -l   显示当前目录下的所有文件及文件夹包括隐藏的.和..等并显示详细信息，详细信息包括大小，属组，创建时间 $ ls -al   catcat命令主要有三大功能">
+<meta property="og:description" content="基本git命令:git init用于创建新仓库，步骤为：创建新目录，进入目录，然后执行 git init以创建新的 git 仓库。生成 .git 目录，该目录就是本地仓库 $ git init   git addgit 仓库管理分为三大块，工作区，缓存区 ，版本库当在工作目录进行文件的新增，修改后需要提交仓库的过程中，必须将文件或者目录 git add 到 缓存区，git仓库会保存临时改动，否则直">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/01/17/commanduse/explainshell.jpg">
-<meta property="og:updated_time" content="2019-01-20T13:19:03.693Z">
+<meta property="og:image" content="http://yoursite.com/2019/01/14/git/init.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/14/git/add.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/14/git/commit.jpg">
+<meta property="og:updated_time" content="2019-01-20T13:19:50.267Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="命令行入门">
-<meta name="twitter:description" content="命令行使用举例:ls:列出文件下所有的文件，包括以“.“开头的隐藏文件（linux下文件隐藏文件是以.开头的，如果存在..代表存在着父目录） $ ls -a   列出文件的详细信息，如创建者，创建时间，文件的读写权限列表等等 $ ls -l   显示当前目录下的所有文件及文件夹包括隐藏的.和..等并显示详细信息，详细信息包括大小，属组，创建时间 $ ls -al   catcat命令主要有三大功能">
-<meta name="twitter:image" content="http://yoursite.com/2019/01/17/commanduse/explainshell.jpg">
+<meta name="twitter:title" content="git入门">
+<meta name="twitter:description" content="基本git命令:git init用于创建新仓库，步骤为：创建新目录，进入目录，然后执行 git init以创建新的 git 仓库。生成 .git 目录，该目录就是本地仓库 $ git init   git addgit 仓库管理分为三大块，工作区，缓存区 ，版本库当在工作目录进行文件的新增，修改后需要提交仓库的过程中，必须将文件或者目录 git add 到 缓存区，git仓库会保存临时改动，否则直">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/14/git/init.jpg">
 
 
 
@@ -121,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/17/commanduse/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/14/git/">
 
 
 
 
 
-  <title>命令行入门 | Hexo</title>
+  <title>git入门 | Hexo</title>
   
 
 
@@ -254,7 +256,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/17/commanduse/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/14/git/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="orange">
@@ -271,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">命令行入门</h1>
+          <h1 class="post-title" itemprop="name headline">git入门</h1>
         
 
         <div class="post-meta">
@@ -283,8 +285,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-17T01:51:28+08:00">
-                2019-01-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-14T00:13:21+08:00">
+                2019-01-14
               </time>
             
 
@@ -321,36 +323,22 @@
       
 
       
-        <h2 id="命令行使用举例"><a href="#命令行使用举例" class="headerlink" title="命令行使用举例:"></a>命令行使用举例:</h2><h3 id="ls"><a href="#ls" class="headerlink" title="ls:"></a>ls:</h3><p>列出文件下所有的文件，包括以“.“开头的隐藏文件（linux下文件隐藏文件是以.开头的，如果存在..代表存在着父目录）</p>
-<pre><code class="bash">$ ls -a 
+        <h2 id="基本git命令"><a href="#基本git命令" class="headerlink" title="基本git命令:"></a>基本git命令:</h2><h3 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h3><p>用于创建新仓库，步骤为：创建新目录，进入目录，然后执行 git init以创建新的 git 仓库。<br>生成 .git 目录，该目录就是本地仓库</p>
+<pre><code class="bash">$ git init
 </code></pre>
-<p>列出文件的详细信息，如创建者，创建时间，文件的读写权限列表等等</p>
-<pre><code class="bash">$ ls -l 
+<p><img src="/2019/01/14/git/init.jpg" alt=""></p>
+<h3 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a>git add</h3><p>git 仓库管理分为三大块，工作区，缓存区 ，版本库<br>当在工作目录进行文件的新增，修改后需要提交仓库的过程中，必须将文件或者目录 git add 到 缓存区，git仓库会保存临时改动，否则直接提交无效。（已经提交过的文件可以不用add,但一般不要忽略，防止意外）<br>git add 两种使用方式：</p>
+<ul>
+<li>git add ./* 提交所有目录和文件</li>
+<li>git add [目录名/文件名/路径] 提交某文件或目录</li>
+</ul>
+<pre><code class="bash">$ git add
 </code></pre>
-<p>显示当前目录下的所有文件及文件夹包括隐藏的.和..等并显示详细信息，详细信息包括大小，属组，创建时间</p>
-<pre><code class="bash">$ ls -al 
+<p><img src="/2019/01/14/git/add.jpg" alt=""></p>
+<h3 id="git-commit-v"><a href="#git-commit-v" class="headerlink" title="git commit -v"></a>git commit -v</h3><p>git add 命令只是将文件提交到缓存区，如果要实际提交还需要使用 git commit 命令,git commit -v 进入vim 输入message后退出可将文件提交到本地仓库，显示提交时的所有diff信息。</p>
+<pre><code class="bash">$ git commit -v
 </code></pre>
-<h3 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h3><p>cat命令主要有三大功能:</p>
-<p>1.一次显示整个文件</p>
-<pre><code class="bash">$ cat filename 
-</code></pre>
-<p>2.从键盘创建一个文件，只能创建新文件，不能编辑已有文件</p>
-<pre><code class="bash">$ cat filename 
-</code></pre>
-<p>3.将几个文件合并为一个文件</p>
-<pre><code class="bash">$ cat   file1   file2  &gt; file
-</code></pre>
-<h3 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h3><p>1.重命名文件，将文件b.txt命名为a.txt</p>
-<pre><code class="bash">$ mv b.txt a.txt
-</code></pre>
-<p>2.移动文件位置，将a.txt移动到home文件夹下</p>
-<pre><code class="bash">$ mv a.txt /home/
-</code></pre>
-<h3 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h3><p>在目录下创建不存在的文件</p>
-<pre><code class="bash">$ touch filename
-</code></pre>
-<p>linux命令很多，在此不再赘述，可通过<a href="https://explainshell.com/" target="_blank" rel="noopener">explainhell</a>查看</p>
-<p><img src="/2019/01/17/commanduse/explainshell.jpg" alt=""></p>
+<p><img src="/2019/01/14/git/commit.jpg" alt=""></p>
 
       
     </div>
@@ -375,18 +363,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/14/git入门/" rel="next" title="git入门">
-                <i class="fa fa-chevron-left"></i> git入门
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/17/htt/" rel="prev" title="http入门">
-                http入门 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/14/git入门/" rel="prev" title="git入门">
+                git入门 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -501,7 +485,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#命令行使用举例"><span class="nav-number">1.</span> <span class="nav-text">命令行使用举例:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ls"><span class="nav-number">1.1.</span> <span class="nav-text">ls:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cat"><span class="nav-number">1.2.</span> <span class="nav-text">cat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mv"><span class="nav-number">1.3.</span> <span class="nav-text">mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#touch"><span class="nav-number">1.4.</span> <span class="nav-text">touch</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本git命令"><span class="nav-number">1.</span> <span class="nav-text">基本git命令:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-init"><span class="nav-number">1.1.</span> <span class="nav-text">git init</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-add"><span class="nav-number">1.2.</span> <span class="nav-text">git add</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-commit-v"><span class="nav-number">1.3.</span> <span class="nav-text">git commit -v</span></a></li></ol></li></ol></div>
             
 
           </div>
