@@ -79,13 +79,24 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="http入门http 请求http请求： HTTP/1.1协议中共定义了八种方法（有时也叫“动作”）来表明Request-URI指定的资源的不同操作方式 OPTIONS - 返回服务器针对特定资源所支持的HTTP请求方法。也可以利用向Web服务器发送’*’的请求来测试服务器的功能性。HEAD- 向服务器索要与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况">
+<meta property="og:type" content="article">
+<meta property="og:title" content="http入门">
+<meta property="og:url" content="http://yoursite.com/2019/01/17/htt/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="http入门http 请求http请求： HTTP/1.1协议中共定义了八种方法（有时也叫“动作”）来表明Request-URI指定的资源的不同操作方式 OPTIONS - 返回服务器针对特定资源所支持的HTTP请求方法。也可以利用向Web服务器发送’*’的请求来测试服务器的功能性。HEAD- 向服务器索要与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/GET.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/POST1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/POST2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/curl.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/resp1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/htt/htt/resp2.jpg">
+<meta property="og:updated_time" content="2019-01-16T20:58:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="http入门">
+<meta name="twitter:description" content="http入门http 请求http请求： HTTP/1.1协议中共定义了八种方法（有时也叫“动作”）来表明Request-URI指定的资源的不同操作方式 OPTIONS - 返回服务器针对特定资源所支持的HTTP请求方法。也可以利用向Web服务器发送’*’的请求来测试服务器的功能性。HEAD- 向服务器索要与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/17/htt/htt/GET.jpg">
 
 
 
@@ -115,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/17/htt/">
 
 
 
 
 
-  <title>Hexo</title>
+  <title>http入门 | Hexo</title>
   
 
 
@@ -140,8 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -234,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/17/htt/" itemprop="url">http入门</a></h1>
+          <h1 class="post-title" itemprop="name headline">http入门</h1>
         
 
         <div class="post-meta">
@@ -318,9 +326,7 @@
       
 
       
-        
-          
-            <h2 id="http入门"><a href="#http入门" class="headerlink" title="http入门"></a>http入门</h2><h3 id="http-请求"><a href="#http-请求" class="headerlink" title="http 请求"></a>http 请求</h3><p>http请求：</p>
+        <h2 id="http入门"><a href="#http入门" class="headerlink" title="http入门"></a>http入门</h2><h3 id="http-请求"><a href="#http-请求" class="headerlink" title="http 请求"></a>http 请求</h3><p>http请求：</p>
 <p>HTTP/1.1协议中共定义了八种方法（有时也叫“动作”）来表明Request-URI指定的资源的不同操作方式</p>
 <p>OPTIONS - 返回服务器针对特定资源所支持的HTTP请求方法。也可以利用向Web服务器发送’*’的请求来测试服务器的功能性。<br>HEAD- 向服务器索要与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况下，就可以获取包含在响应消息头中的元信息。该方法常用于测试超链接的有效性，是否可以访问，以及最近是否更新。<br>GET - 向特定的资源发出请求。注意：GET方法不应当被用于产生“副作用”的操作中，例如在web app.中。其中一个原因是GET可能会被网络蜘蛛等随意访问。<br>POST - 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。<br>PUT - 向指定资源位置上传其最新内容。<br>DELETE - 请求服务器删除Request-URI所标识的资源。<br>TRACE- 回显服务器收到的请求，主要用于测试或诊断。<br>CONNECT - HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。<br>PATCH - 用来将局部修改应用于某一资源</p>
 <p>这里主要以为GET和POST说明请求包括哪些内容，以及用chrome调试工具如何查看http请求内容</p>
@@ -345,8 +351,6 @@
 <p>查看response可以看到相应的第四部分</p>
 <p><img src="htt/resp2.jpg" alt=""></p>
 
-          
-        
       
     </div>
     
@@ -363,161 +367,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/17/命令行使用/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="orange">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/17/命令行使用/" itemprop="url">命令行入门</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-17T01:51:28+08:00">
-                2019-01-17
-              </time>
+              <a href="/2019/01/17/命令行使用/" rel="next" title="命令行入门">
+                <i class="fa fa-chevron-left"></i> 命令行入门
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="命令行使用举例"><a href="#命令行使用举例" class="headerlink" title="命令行使用举例:"></a>命令行使用举例:</h2><h3 id="ls"><a href="#ls" class="headerlink" title="ls:"></a>ls:</h3><p>列出文件下所有的文件，包括以“.“开头的隐藏文件（linux下文件隐藏文件是以.开头的，如果存在..代表存在着父目录）</p>
-<pre><code class="bash">$ ls -a 
-</code></pre>
-<p>列出文件的详细信息，如创建者，创建时间，文件的读写权限列表等等</p>
-<pre><code class="bash">$ ls -l 
-</code></pre>
-<p>显示当前目录下的所有文件及文件夹包括隐藏的.和..等并显示详细信息，详细信息包括大小，属组，创建时间</p>
-<pre><code class="bash">$ ls -al 
-</code></pre>
-<h3 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h3><p>cat命令主要有三大功能:</p>
-<p>1.一次显示整个文件</p>
-<pre><code class="bash">$ cat filename 
-</code></pre>
-<p>2.从键盘创建一个文件，只能创建新文件，不能编辑已有文件</p>
-<pre><code class="bash">$ cat filename 
-</code></pre>
-<p>3.将几个文件合并为一个文件</p>
-<pre><code class="bash">$ cat   file1   file2  &gt; file
-</code></pre>
-<h3 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h3><p>1.重命名文件，将文件b.txt命名为a.txt</p>
-<pre><code class="bash">$ mv b.txt a.txt
-</code></pre>
-<p>2.移动文件位置，将a.txt移动到home文件夹下</p>
-<pre><code class="bash">$ mv a.txt /home/
-</code></pre>
-<h3 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h3><p>在目录下创建不存在的文件</p>
-<pre><code class="bash">$ touch filename
-</code></pre>
-<p>linux命令很多，在此不再赘述，可通过<a href="https://explainshell.com/" target="_blank" rel="noopener">explainhell</a>查看</p>
-<p><img src="命令行使用/explainshell.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -527,145 +398,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/14/git入门/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="orange">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/14/git入门/" itemprop="url">git入门</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-14T00:13:21+08:00">
-                2019-01-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="基本git命令"><a href="#基本git命令" class="headerlink" title="基本git命令:"></a>基本git命令:</h2><h3 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h3><p>用于创建新仓库，步骤为：创建新目录，进入目录，然后执行 git init以创建新的 git 仓库。<br>生成 .git 目录，该目录就是本地仓库</p>
-<pre><code class="bash">$ git init
-</code></pre>
-<p><img src="git入门/init.jpg" alt=""></p>
-<h3 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a>git add</h3><p>git 仓库管理分为三大块，工作区，缓存区 ，版本库<br>当在工作目录进行文件的新增，修改后需要提交仓库的过程中，必须将文件或者目录 git add 到 缓存区，git仓库会保存临时改动，否则直接提交无效。（已经提交过的文件可以不用add,但一般不要忽略，防止意外）<br>git add 两种使用方式：</p>
-<ul>
-<li>git add ./* 提交所有目录和文件</li>
-<li>git add [目录名/文件名/路径] 提交某文件或目录</li>
-</ul>
-<pre><code class="bash">$ git add
-</code></pre>
-<p><img src="git入门/add.jpg" alt=""></p>
-<h3 id="git-commit-v"><a href="#git-commit-v" class="headerlink" title="git commit -v"></a>git commit -v</h3><p>git add 命令只是将文件提交到缓存区，如果要实际提交还需要使用 git commit 命令,git commit -v 进入vim 输入message后退出可将文件提交到本地仓库，显示提交时的所有diff信息。</p>
-<pre><code class="bash">$ git commit -v
-</code></pre>
-<p><img src="git入门/commit.jpg" alt=""></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -673,6 +410,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -693,8 +434,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -736,6 +486,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#http入门"><span class="nav-number">1.</span> <span class="nav-text">http入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#http-请求"><span class="nav-number">1.1.</span> <span class="nav-text">http 请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http-响应"><span class="nav-number">1.2.</span> <span class="nav-text">http 响应</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -876,6 +642,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
