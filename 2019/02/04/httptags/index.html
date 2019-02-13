@@ -79,18 +79,21 @@
 
 
 
-<meta name="description" content="本文简单介绍几个常用的HTML标签 form 标签跳转页面（HTTP POST 请求）属性见 MDN：MDN">
+<meta name="description" content="本文简单介绍几个常用的HTML标签 form 标签跳转页面（HTTP POST 请求）属性见 MDN：MDN  form 标签的作用有：发起 POST 请求发起 GET 请求form 标签的 action 属性的作用是？指定请求路径form 标签的 method 属性的作用是？指定请求动词form 标签在以下哪些情况下可以被用户提交？form 标签里面有一个 input type=submit 的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML常用标签简介">
 <meta property="og:url" content="http://yoursite.com/2019/02/04/httptags/index.html">
 <meta property="og:site_name" content="Orange">
-<meta property="og:description" content="本文简单介绍几个常用的HTML标签 form 标签跳转页面（HTTP POST 请求）属性见 MDN：MDN">
+<meta property="og:description" content="本文简单介绍几个常用的HTML标签 form 标签跳转页面（HTTP POST 请求）属性见 MDN：MDN  form 标签的作用有：发起 POST 请求发起 GET 请求form 标签的 action 属性的作用是？指定请求路径form 标签的 method 属性的作用是？指定请求动词form 标签在以下哪些情况下可以被用户提交？form 标签里面有一个 input type=submit 的">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/02/04/httptags/form.jpg">
-<meta property="og:updated_time" content="2019-02-13T15:00:41.386Z">
+<meta property="og:image" content="http://yoursite.com/2019/02/04/httptags/iframe1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/02/04/httptags/iframe2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/02/04/httptags/atag.jpg">
+<meta property="og:updated_time" content="2019-02-13T17:35:10.092Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML常用标签简介">
-<meta name="twitter:description" content="本文简单介绍几个常用的HTML标签 form 标签跳转页面（HTTP POST 请求）属性见 MDN：MDN">
+<meta name="twitter:description" content="本文简单介绍几个常用的HTML标签 form 标签跳转页面（HTTP POST 请求）属性见 MDN：MDN  form 标签的作用有：发起 POST 请求发起 GET 请求form 标签的 action 属性的作用是？指定请求路径form 标签的 method 属性的作用是？指定请求动词form 标签在以下哪些情况下可以被用户提交？form 标签里面有一个 input type=submit 的">
 <meta name="twitter:image" content="http://yoursite.com/2019/02/04/httptags/form.jpg">
 
 
@@ -324,6 +327,15 @@
         <p>本文简单介绍几个常用的HTML标签</p>
 <h3 id="form-标签"><a href="#form-标签" class="headerlink" title="form 标签"></a>form 标签</h3><p>跳转页面（HTTP POST 请求）<br>属性见 MDN：<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form" target="_blank" rel="noopener">MDN</a></p>
 <p><img src="/2019/02/04/httptags/form.jpg" alt=""></p>
+<p>form 标签的作用有：<br>发起 POST 请求<br>发起 GET 请求<br>form 标签的 action 属性的作用是？<br>指定请求路径<br>form 标签的 method 属性的作用是？<br>指定请求动词<br>form 标签在以下哪些情况下可以被用户提交？<br>form 标签里面有一个 input type=submit 的元素<br>form 标签里面有一个 button 元素，button 的 type 属性为空</p>
+<h3 id="iframe-标签"><a href="#iframe-标签" class="headerlink" title="iframe 标签"></a>iframe 标签</h3><p>嵌套页面</p>
+<p><img src="/2019/02/04/httptags/iframe1.jpg" alt=""></p>
+<p>比如说，iframe标签也会和a标签一起用</p>
+<p><img src="/2019/02/04/httptags/iframe2.jpg" alt=""></p>
+<p>也就是说，在点击a标签的时候,iframe所在的那一部分会打开baidu.com的页面。</p>
+<h3 id="a-标签"><a href="#a-标签" class="headerlink" title="a 标签"></a>a 标签</h3><p>跳转页面（HTTP GET 请求）<br>属性见<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a" target="_blank" rel="noopener">MDN</a></p>
+<p><img src="/2019/02/04/httptags/atag.jpg" alt=""></p>
+<p><a href="">link</a> 标签被点击后会发生什么？<br>当前页面刷新<br><a href="#">link</a> 标签被点击后会发生什么？<br>页面锚点变成 #<br>页面滚动到顶部<br><a href="/..">link</a> 标签被点击后会发生什么？<br>浏览器发起 GET / HTTP/1.1 的请求<br>关于无协议链接 //qq.com，说法正确的是<br>浏览器会根据当前协议，补全无协议链接的协议<br>如果用 file:// 协议浏览页面，就会访问到 file://qq.com，这是一个不存在的路径<br>应该尽量不使用 file:// 协议预览网页，以免无协议链接出错</p>
 
       
     </div>
@@ -470,7 +482,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#form-标签"><span class="nav-number">1.</span> <span class="nav-text">form 标签</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#form-标签"><span class="nav-number">1.</span> <span class="nav-text">form 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iframe-标签"><span class="nav-number">2.</span> <span class="nav-text">iframe 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#a-标签"><span class="nav-number">3.</span> <span class="nav-text">a 标签</span></a></li></ol></div>
             
 
           </div>
