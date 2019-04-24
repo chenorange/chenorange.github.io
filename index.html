@@ -322,7 +322,32 @@
           
             <h2 id="实现一个jQuery的API"><a href="#实现一个jQuery的API" class="headerlink" title="实现一个jQuery的API"></a>实现一个jQuery的API</h2><p>根据api结果可以看出，需要实现一个函数，调用这个函数传入标签名字的字符串，能返回一个实例对象；<br>这个实例对象中有两个方法，增加对应标签的class类名，设置对应标签的文本内容；<br>我们在所需函数里用原生js和dom操作，即可。</p>
 <p>注意：document.getElementsByTagName(element); 返回的是伪数组，遍历操作就能改变对应的样式。</p>
+<pre><code>&lt;/script&gt; 
+    window.jQuery = function (element) {
+        var tags = document.getElementsByTagName(element);
+        var obj = {
+            addClass: function (color) {
+                for (var i = 0; i &lt; tags.length; i++) {
+                    tags[i].classList.add(color);
+                }
+            },
+            setText: function (text) {
+                for (var i = 0; i &lt; tags.length; i++) {
+                    tags[i].innerHTML = text;
+                }
+            }
+        };
+        return obj;
+    };
 
+
+    window.$ = jQuery;
+
+    var $div = $(&apos;div&apos;)
+    $div.addClass(&apos;red&apos;) // 可将所有 div 的 class 添加一个 red
+    $div.setText(&apos;hi&apos;) // 可将所有 div 的 textContent 变为 hi
+&lt;/script&gt;
+</code></pre>
           
         
       
